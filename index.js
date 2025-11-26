@@ -17,7 +17,9 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://ecommerce-fe-vert.vercel.app",
+    origin:["https://ecommerce-fe-vert.vercel.app",
+     "http://localhost:5173",
+  "https://ecommercebe-b90j.onrender.com"],
     credentials: true,
   })
 );
