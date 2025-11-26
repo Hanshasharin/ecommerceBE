@@ -22,12 +22,12 @@ router.get(
 
     res.cookie("token", token, {
       httpOnly: true,
-      sameSite: "lax",
-      secure: false,
+     secure: true,            // cookie only for HTTPS
+      sameSite: "none",
       maxAge: 30 * 24 * 60 * 60 * 1000,
     });
 
-    res.redirect("http://localhost:5173/product"); // redirect to products
+    res.redirect("https://ecommerce-fe-vert.vercel.app/product"); // redirect to products
   }
 );
 

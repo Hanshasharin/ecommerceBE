@@ -7,7 +7,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:3000/api/google/callback",
+      callbackURL: "https://ecommercebe-b90j.onrender.com/api/google/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
       try {
