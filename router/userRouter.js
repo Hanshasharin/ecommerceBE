@@ -24,10 +24,10 @@ router.get(
       httpOnly: true,
      secure: true,            // cookie only for HTTPS
       sameSite: "none",
-      maxAge: 30 * 24 * 60 * 60 * 1000,
+      maxAge: 30 * 24 * 60 * 60 * 1000,  
     });
 
-    res.redirect("https://ecommerce-fe-vert.vercel.app/product"); // redirect to products
+    res.redirect("https://ecommerce-fe-vert.vercel.app"); // redirect to products
   }
 );
 
